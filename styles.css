@@ -46,6 +46,14 @@
   grid-area: Actions;
 }
 
+img.Actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%
+  width: auto;
+}
+
 .Search { grid-area: Search; }
 
 .Bag { grid-area: Bag; }
