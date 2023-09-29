@@ -1,1 +1,44 @@
+.layout {  display: grid;
+  grid-template-columns: 0fr 1fr 0.5fr 0fr;
+  grid-template-rows: 0.3fr 2.3fr 0.3fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Logo Logo ."
+    ". Content Content ."
+    ". Menu Actions .";
+}
 
+.Logo { grid-area: Logo; }
+
+.Menu { grid-area: Menu; }
+
+.Content { grid-area: Content; }
+
+.Actions { grid-area: Actions; }
+
+@media only screen and (min-width: 768px) {
+.layout {  display: grid;
+  grid-template-columns: 0.15fr 0.8fr 1.6fr 0.6fr;
+  grid-template-rows: 0.4fr 2.1fr 0fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Logo Menu Actions"
+    "Content Content Content Content"
+    ". . . .";
+}
+
+.Logo { grid-area: Logo; }
+
+.Menu { grid-area: Menu; }
+
+.Actions { grid-area: Actions; }
+
+.Content { grid-area: Content; }
+
+}
