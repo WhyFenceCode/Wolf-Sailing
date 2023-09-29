@@ -1,4 +1,7 @@
-.layout {  display: grid;
+.layout {  
+  width: 100vw;
+  height: 100vh;
+  display: grid;
   grid-template-columns: 0fr 1fr 0.5fr 0fr;
   grid-template-rows: 0.3fr 2.3fr 0.3fr;
   grid-auto-columns: 1fr;
@@ -20,7 +23,10 @@
 .Actions { grid-area: Actions; }
 
 @media only screen and (min-width: 768px) {
-.layout {  display: grid;
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
   grid-template-columns: 0.15fr 0.8fr 1.6fr 0.6fr;
   grid-template-rows: 0.4fr 2.1fr 0fr;
   grid-auto-columns: 1fr;
