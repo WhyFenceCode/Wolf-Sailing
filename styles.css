@@ -79,7 +79,7 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Mens Womans Junior .";
+      "Mens Womans Junior Accessories";
     grid-area: Menu;
   }
   
@@ -88,6 +88,8 @@
   .Womans { grid-area: Womans; }
   
   .Junior { grid-area: Junior; }
+
+  .Accessories { grid-area: Accessories; }
   
   .Actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
