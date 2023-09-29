@@ -85,15 +85,37 @@
     grid-area: Menu;
   }
   
-  .Mens { grid-area: Mens; }
+  .Mens { 
+    grid-area: Mens;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-  .Womans { grid-area: Womans; }
+  .Womans { 
+    grid-area: Womans; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-  .Junior { grid-area: Junior; }
+  .Junior { 
+    grid-area: Junior;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .Accessories { grid-area: Accessories; }
+  .Accessories { 
+    grid-area: Accessories; 
+  }
 
-  .Boat { grid-area: Boat; }
+  .Boat { 
+    grid-area: Boat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .Actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
