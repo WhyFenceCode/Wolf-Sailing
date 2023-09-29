@@ -31,6 +31,15 @@
   grid-row-end: 4;
 }
 
+.mainfeaturebackground{
+  height: 80vh;
+  width: 100%;
+  background-image: url("https://cdn11.bigcommerce.com/s-scyvnex8so/product_images/uploaded_images/laser-gallery-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .content{
   grid-column: 2;
   grid-row: 2;
