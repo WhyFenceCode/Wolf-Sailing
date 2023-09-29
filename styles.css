@@ -16,11 +16,42 @@
 
 .Logo { grid-area: Logo; }
 
-.Menu { grid-area: Menu; }
+.Menu {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Mens Womans Junior Accessories";
+  grid-area: Menu;
+}
+
+.Mens { grid-area: Mens; }
+
+.Womans { grid-area: Womans; }
+
+.Junior { grid-area: Junior; }
+
+.Accessories { grid-area: Accessories; }
 
 .Content { grid-area: Content; }
 
-.Actions { grid-area: Actions; }
+.Actions {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Search Bag Account";
+  grid-area: Actions;
+}
+
+.Search { grid-area: Search; }
+
+.Bag { grid-area: Bag; }
+
+.Account { grid-area: Account; }
+
 
 @media only screen and (min-width: 768px) {
 .layout {
