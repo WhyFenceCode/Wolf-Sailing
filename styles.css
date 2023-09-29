@@ -46,19 +46,19 @@
   grid-area: Actions;
 }
 
-img.Actions{
+.Search { grid-area: Search; }
+
+.Bag { grid-area: Bag; }
+
+.Account { grid-area: Account; }
+
+img.Search{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80%;
   width: auto;
 }
-
-.Search { grid-area: Search; }
-
-.Bag { grid-area: Bag; }
-
-.Account { grid-area: Account; }
 
 
 @media only screen and (min-width: 768px) {
