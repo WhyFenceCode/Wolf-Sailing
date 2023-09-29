@@ -1,9 +1,13 @@
+:root{
+  --br-round: 3vw;
+}
+
 .layout {
   height: 500vh;
   width: 100vw;
   display: grid; 
   grid-template-columns: 0.05fr 1fr; 
-  grid-template-rows: 0.15fr 1fr 4.6fr; 
+  grid-template-rows: 0.15fr 0.85fr 0.15fr 4.6fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     ". ."
@@ -33,7 +37,7 @@ img.logo{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
 
 .mainfeaturebackground{
@@ -43,6 +47,7 @@ img.logo{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  border-radius: var(--bg-round);
 }
 
 .content{
@@ -51,5 +56,5 @@ img.logo{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
