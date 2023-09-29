@@ -58,8 +58,6 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    align-items: center;
-    justify-items: center;
     grid-template-columns: 0.15fr 0.8fr 1.6fr 0.45fr;
     grid-template-rows: 0.4fr 2.1fr 0.4fr;
     grid-auto-columns: 1fr;
@@ -74,7 +72,10 @@
   
   .Logo { grid-area: Logo; }
   
-  .Menu {  display: grid;
+  .Menu {  
+    display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
