@@ -130,11 +130,26 @@
     grid-area: Actions;
   }
   
-  .Search { grid-area: Search; }
+  .Search { 
+    grid-area: Search; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-  .Bag { grid-area: Bag; }
+  .Bag { 
+    grid-area: Bag; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-  .Account { grid-area: Account; }
+  .Account { 
+    grid-area: Account; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .Content { grid-area: Content; }
 
