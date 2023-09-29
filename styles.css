@@ -108,6 +108,9 @@
 
   .Accessories { 
     grid-area: Accessories; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .Boat { 
