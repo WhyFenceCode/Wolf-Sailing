@@ -137,10 +137,8 @@
     justify-content: center;
   }
 
-  .Search:hover {
-    .Actions{
-      grid-template-columns: 1fr 0fr 0fr;
-    }
+  .search:hover ~ .actions {
+    grid-template-columns: 1fr 0fr 0fr;
   }
   
   .Bag { 
