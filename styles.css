@@ -136,6 +136,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.6s ease-in-out;
   }
   
   .Bag { 
@@ -143,6 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.6s ease-in-out;
   }
   
   .Account { 
@@ -150,6 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.6s ease-in-out;
   }
   
   .Content { grid-area: Content; }
