@@ -8,8 +8,12 @@ $(document).ready(function() {
                 function(){ // Mouse over
                     $('.Actions').css('grid-template-columns', '1fr 0fr 0fr');
                     $('.Bag, .Account').css('opacity', '0'); // Make other grid items invisible
+                    setTimeout(function() {
+                    $('.Bag, .Account').css('display', 'none');
+                    }, 600);
                 },
                 function(){ // Mouse out
+                    $('.Bag, .Account').css('display', ''); // Reset to original
                     $('.Actions').css('grid-template-columns', ''); // Reset to original
                     $('.Bag, .Account').css('opacity', '1'); // Make other grid items visible
                 }
