@@ -23,17 +23,22 @@
                 <label for="pwd">Password:</label><br>
                 <input type="password" id="pwd" name="pwd">
             </form>
-            <button onclick="devLogin()">Submit</button>
-            
+            <br>
+
+        
             <script>
-            function devLogin() {
-                var x = document.getElementById("devlogin");
-                var text = "";
-                text += x.elements[1].value;
-                if (text == "W0LFD3V") {
-                    document.getElementById("devlogin").style.display = "none";
+                function devLogin() {
+                    var x = document.getElementById("devlogin");
+                    var text = "";
+                    text += x.elements[1].value;
+                    if (text == "W0LFD3V") {
+                        document.getElementById("devlogin").style.display = "none";
                 }
             </script>
+            
+            <button onclick="devLogin()">Submit</button>
+            
+            
         </div>
         <div class="layout">
             <div class="Logo"></div>
