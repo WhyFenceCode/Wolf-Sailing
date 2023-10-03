@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Wolf Sailing</title>
+        <style>
+            .fullscreen-div {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #f9f9f9; /* Change this to the desired background color */
+                text-align: center;
+            }
+
+            button.fullscreen-div {
+              background-color: #191970;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="margin: 0;">
+        <div class="fullscreen-div" id="devloginpanel">
+            <h1>Site Under Development, Please Use Dev-Key</h1>
+            <form id="devlogin">
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+            </form>
+            <br>
+
+            <button id="dev-login" onclick="devLogin()">Login</button>
+            
+            <script>
+              function devLogin() {
+                    var text = "";
+                    text += document.getElementById('pwd').value
+                    if (text == "W0LFD3V") {
+                        document.getElementById("devloginpanel").style.display = "none";
+                    }
+              }
+            </script>
+            
+            
+        </div>
+        <div class="layout">
+            <div class="Logo"></div>
+            <div class="Menu">
+                <div class="Mens"><h3>Mens</h3></div>
+                <div class="Womans"><h3>Womans</h3></div>
+                <div class="Junior"><h3>Junior</h3></div>
+                <div class="Accessories"><h3>Accessories</h3></div>
+                <div class="Boat"><h3>Boat</h3></div>
+            </div>
+            <div class="Actions">
+                <script src="acctions_script.js"></script>
+                <div class="Search"><img src="photos/icons/search.svg" alt="Search" onclick="searchFunction()"></div>
+                <div class="Bag"><img src="photos/icons/cart.svg" alt="Cart" onclick="bagFunction()"></div>
+                <div class="Account"><img src="photos/icons/accounts.svg" alt="Account" onclick="accountFunction()"></div>
+            </div>
+            <div class="Content"></div>
+        </div>
+    </body>
+</html>
