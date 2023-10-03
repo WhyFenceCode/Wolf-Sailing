@@ -8,4 +8,5 @@ function bagFunction() {
 
 function accountFunction() {
   console.error("Account");
+  window.location = "accounts.html"
 }
