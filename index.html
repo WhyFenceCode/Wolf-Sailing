@@ -5,6 +5,13 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
         <title>Wolf Sailing</title>
+        <script src="cookies.js"></script>
+        <script>
+            var x = getCookie('DevLogin');
+            if (x == true) {
+                document.getElementById("devloginpanel").style.display = "none";
+            }
+        </script> 
         <style>
             .fullscreen-div {
                 position: fixed;
@@ -40,11 +47,14 @@
             <br>
 
             <button id="dev-login" onclick="devLogin()">Login</button>
+
+            <script src="cookies.js"></script>
             <script>
               function devLogin() {
                     var text = "";
                     text += document.getElementById('pwd').value
                     if (text == "W0LFD3V") {
+                        setCookie(DevLogin, true, 7)
                         document.getElementById("devloginpanel").style.display = "none";
                     }
               }
