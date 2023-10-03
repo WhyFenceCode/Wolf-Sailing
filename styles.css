@@ -14,7 +14,7 @@
     ". Menu Actions .";
 }
 
-.Logo { grid-area: Logo; position: fixed; }
+.Logo { grid-area: Logo; }
 
 .Menu {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -24,7 +24,6 @@
   grid-template-areas:
     "Mens Womans Junior Accessories";
   grid-area: Menu;
-  position: fixed;
 }
 
 .Mens { grid-area: Mens; }
@@ -47,7 +46,6 @@
   grid-template-areas:
     "Search Bag Account";
   grid-area: Actions;
-  position: fixed;
 }
 
 .Search { grid-area: Search; }
