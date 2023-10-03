@@ -17,13 +17,23 @@
         </style>
     </head>
     <body style="margin: 0;">
-        <div class="fullscreen-div">
+        <div class="fullscreen-div" id="devlogin">
             <h1>Site Under Development, Please Insert Dev Key</h1>
             <form >
                 <label for="pwd">Password:</label><br>
                 <input type="password" id="pwd" name="pwd">
-                <input type="submit" value="Submit">
             </form>
+            <button onclick="devLogin()">Submit</button>
+            
+            <script>
+            function devLogin() {
+                var x = document.getElementById("frm1");
+                var text = "";
+                text += x.elements[1].value + "<br>";
+                if (text == "W0LFD3V") {
+                    document.getElementById("devlogin").style.display = "none";
+                }
+            </script>
         </div>
         <div class="layout">
             <div class="Logo"></div>
