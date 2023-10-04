@@ -56,105 +56,106 @@
 
 
 @media only screen and (min-width: 768px) {
-  .layout {
+  .layout { 
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.15fr 0.8fr 1.6fr 0.1fr 0.45fr 0.1fr;
-    grid-template-rows: 0.4fr 2.1fr 0.4fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.17fr 1fr 0fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". Logo Menu . Actions . "
-      "Content Content Content Content Content Content"
-      "Content Content Content Content Content Content";
+      "header"
+      "content"
+      ".";
   }
   
-  .Logo { grid-area: Logo; }
-  
-  .Menu {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  .header {  display: grid;
+    grid-template-columns: 0.15fr 1fr 0.07fr 1fr 0.07fr 0.5fr 0.07fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Mens Womans Junior Accessories Boat";
-    grid-area: Menu;
+      ". logo . menu . actions .";
+    grid-area: header;
   }
   
-  .Mens { 
-    grid-area: Mens;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .Womans { 
-    grid-area: Womans; 
+  .logo { 
+    grid-area: logo; 
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .Junior { 
-    grid-area: Junior;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-  .Accessories { 
-    grid-area: Accessories; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .menu {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mens womans junior acces";
+    grid-area: menu;
   }
-
-  .Boat { 
-    grid-area: Boat;
+  
+  .mens { 
+    grid-area: mens; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  .womans { 
+    grid-area: womans; 
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .Actions {  display: grid;
+  .junior { 
+    grid-area: junior; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .acces { 
+    grid-area: acces; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Search Bag Account";
-    grid-area: Actions;
-    transition: grid-template-columns 0.6s ease-in-out;
+      "search bag account";
+    grid-area: actions;
   }
   
-  .Search { 
-    grid-area: Search; 
+  .search { 
+    grid-area: search;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.6s ease-in-out;
   }
   
-  .Bag { 
-    grid-area: Bag; 
+  .bag { 
+    grid-area: bag; 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.6s ease-in-out;
   }
   
-  .Account { 
-    grid-area: Account; 
+  .account { 
+    grid-area: account; 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.6s ease-in-out;
   }
   
-  .Content { grid-area: Content; }
-
-}
+  .content { grid-area: content; }
