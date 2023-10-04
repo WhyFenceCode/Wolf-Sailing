@@ -4,7 +4,7 @@ function openSearchFunction() {
 }
 
 function closeSearchFunction(){
-  myPopup.classList.remove("show");
+  searchUp.classList.remove("show");
 }
 
 function bagFunction() {
