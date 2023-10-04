@@ -21,3 +21,7 @@
 .show {
             display: block;
 }
+
+.popup-content img {
+            color: red;
+}
