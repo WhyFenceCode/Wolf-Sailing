@@ -72,7 +72,8 @@
       ".";
   }
   
-  .header {  display: grid;
+  .header {  
+    display: grid;
     grid-template-columns: 0.15fr 1fr 0.07fr 1fr 0.1fr 0.5fr 0.07fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -80,6 +81,7 @@
     grid-template-areas:
       ". logo . menu . actions .";
     grid-area: header;
+    position: fixed;
   }
   
   .logo { 
