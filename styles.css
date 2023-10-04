@@ -75,7 +75,8 @@
   
   .header {  
     display: grid;
-    grid-template-columns: 0.15fr 1fr 0.07fr 1fr 0.1fr 0.5fr 0.07fr;
+    width: 100%;
+    grid-template-columns: 0.15fr 0.75fr 0.07fr 1fr 0.2fr 0.5fr 0.07fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
