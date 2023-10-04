@@ -8,16 +8,16 @@
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.4);
             display: none;
-        }
-        .popup-content {
+}
+.popup-content {
             background-color: rgba(0, 0, 0, 0.4);
             margin: 10% auto;
             padding: 20px;
             border: none;
             width: 30%;
             font-weight: bolder;
-        }
+}
 
-        .show {
+.show {
             display: block;
-        }
+}
