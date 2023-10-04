@@ -65,12 +65,20 @@
             </div>
             <div class="actions">
               <script src="actions_script.js"></script>
-              <div class="search"><img src="photos/icons/search.svg" alt="Search" onclick="searchFunction()"></div>
+              <div class="search"><img src="photos/icons/search.svg" alt="Search" onclick="openSearchFunction()"></div>
               <div class="bag"><img src="photos/icons/cart.svg" alt="Cart" onclick="bagFunction()"></div>
               <div class="account"><img src="photos/icons/accounts.svg" alt="Account" onclick="accountFunction()"></div>
             </div>
           </div>
           <div class="content"></div>
+
+         <div id="searchUp" class="popup">
+            <div class="popup-content">
+                <p>This is a popup box!</p>
+                <img src="photos/icons/search.svg" alt="Search" onclick="closeSearchFunction()">
+            </div>
+        </div>
+            
         </div>
     </body>
 </html>
