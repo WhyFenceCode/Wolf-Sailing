@@ -3,5 +3,7 @@ function main(){
   const sid = urlParams.get('sid');
 
   import data from 'products/sid/sid_'+ sid +'.json?type=module';
-  console.log(data);  
+  var feat = obj.feat.fields;
+  var feat = obj.type.fields;
+  var feat = obj.seri.fields;
 }
