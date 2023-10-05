@@ -12,7 +12,7 @@
 .popup-content {
             background-color: white;
             margin: 10% auto;
-            padding: 20px;
+            padding: 3vw;
             border: none;
             width: 30%;
             font-weight: bolder;
@@ -27,17 +27,17 @@
 }
 
 .popup-content input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
+  padding: 1vw;
+  margin-top: 2vw;
   font-size: 17px;
   border: none;
 }
 
 .popup-content button {
   float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
+  padding: 1vw 2vw;
+  margin-top: 2vw;
+  margin-right: 2vw;
   background: #ddd;
   font-size: 17px;
   border: none;
