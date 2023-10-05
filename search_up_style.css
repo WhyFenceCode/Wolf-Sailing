@@ -25,3 +25,25 @@
 .popup-content img {
             color: red;
 }
+
+.popup-content input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.popup-content .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content .search-container button:hover {
+  background: #ccc;
+}
