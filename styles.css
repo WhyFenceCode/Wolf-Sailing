@@ -3,7 +3,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0fr 1fr 0.17fr;
+    grid-template-rows: 0.15fr 1fr 0.17fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
