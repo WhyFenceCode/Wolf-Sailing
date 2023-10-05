@@ -45,10 +45,6 @@
     grid-area: menu;
   }
 
-.menu a {
-    display: none;
-}
-
  .mens { 
     grid-area: mens; 
     display: flex;
