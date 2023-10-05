@@ -29,6 +29,10 @@
   border: none;
 }
 
+.popup-content input[type=text]:focus {
+  outline: none;
+}
+
 .popup-content button {
   float: right;
   padding: 1vw 2vw;
