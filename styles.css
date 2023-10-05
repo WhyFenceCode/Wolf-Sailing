@@ -23,7 +23,7 @@
     grid-auto-flow: row;
     grid-template-areas:
       "logo logo"
-      "menu actions ";
+      "menu actions";
     grid-area: header;
     position: fixed;
   }
