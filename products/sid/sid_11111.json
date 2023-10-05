@@ -1,11 +1,7 @@
-_sid_{11111}
-_name_{Accessories}
-_featured{
-  
-}
-_sids_{
-  11112
-}
-_pids_{
-  11111
+{
+  "sid": 11111,
+  "name": "Accessories",
+  "fids": 11111,
+  "sids": 11114, 11115,
+  "pids": 11111,
 }
