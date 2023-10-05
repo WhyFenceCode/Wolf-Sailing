@@ -10,9 +10,6 @@
             display: none;
 }
 .popup-content {
-            position: fixed;
-            bottom: 50%;
-            right: 50%;
             background-color: white;
             margin: 10% auto;
             padding: 3vw;
