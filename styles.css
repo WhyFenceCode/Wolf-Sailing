@@ -9,7 +9,7 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "."
+      "logo"
       "content"
       "header";
   }
@@ -17,38 +17,72 @@
 .header {  
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "search search search"
-      "ham bag account";
+      "menu actions ";
     grid-area: header;
     position: fixed;
   }
 
-.Logo { grid-area: Logo; }
+.logo { 
+    grid-area: logo; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.Menu {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Mens Womans Junior Accessories";
-  grid-area: Menu;
-}
+ .menu {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mens womans junior acces";
+    grid-area: menu;
+  }
 
-.Mens { grid-area: Mens; }
+ .mens { 
+    grid-area: mens; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  .womans { 
+    grid-area: womans; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .junior { 
+    grid-area: junior; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .acces { 
+    grid-area: acces; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.Womans { grid-area: Womans; }
-
-.Junior { grid-area: Junior; }
-
-.Accessories { grid-area: Accessories; }
-
-.search { 
+ .actions {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "search bag account";
+    grid-area: actions;
+  }
+  
+  .search { 
     grid-area: search;
     display: flex;
     align-items: center;
@@ -73,6 +107,7 @@
     grid-area: content; 
     height: 200vh;
   }
+
 
 
 @media only screen and (min-width: 768px) {
