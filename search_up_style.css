@@ -33,7 +33,7 @@
   border: none;
 }
 
-.popup-content .search-container button {
+.popup-content button {
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
@@ -44,6 +44,6 @@
   cursor: pointer;
 }
 
-.popup-content .search-container button:hover {
+.popup-content button:hover {
   background: #ccc;
 }
