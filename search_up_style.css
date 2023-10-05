@@ -14,16 +14,12 @@
             margin: 10% auto;
             padding: 3vw;
             border: none;
-            width: 30%;
+            width: 60%;
             font-weight: bolder;
 }
 
 .show {
             display: block;
-}
-
-.popup-content img {
-            color: red;
 }
 
 .popup-content input[type=text] {
