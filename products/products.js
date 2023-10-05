@@ -6,4 +6,57 @@ function main(){
   var feat = obj.feat.fields;
   var feat = obj.type.fields;
   var feat = obj.seri.fields;
+
+  if (feat.length > 0) {
+    if (feat.length > 0) {
+    feat.forEach(featFunc);
+    }
+  
+    if (type.length > 0) {
+    type.forEach(typeFunc);
+    }
+  
+    if (seri.length > 0) {
+    seri.forEach(seriFunc);
+    }
+  } else if (type.length > 0) {
+    if (feat.length > 0) {
+    feat.forEach(featFunc);
+    }
+  
+    if (type.length > 0) {
+    type.forEach(typeFunc);
+    }
+  
+    if (seri.length > 0) {
+    seri.forEach(seriFunc);
+    }
+  } else if (seri.length > 0) {
+    if (feat.length > 0) {
+    feat.forEach(featFunc);
+    }
+  
+    if (type.length > 0) {
+    type.forEach(typeFunc);
+    }
+  
+    if (seri.length > 0) {
+    seri.forEach(seriFunc);
+    }
+  }
+  
+  
 }
+
+function featFunc(item, index){
+  
+}
+
+function typeFunc(item, index){
+  
+}
+
+function seriFunc(item, index){
+  
+}
+
