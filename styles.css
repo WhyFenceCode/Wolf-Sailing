@@ -52,7 +52,7 @@
     justify-content: center;
 }
 
-.mens a {
+.mens h3 {
     display: none;
 }
   
@@ -63,7 +63,7 @@
     justify-content: center;
   }
 
-.womans a {
+.womans h3 {
     display: none;
 }
   
@@ -74,7 +74,7 @@
     justify-content: center;
   }
 
-.junior a {
+.junior h3 {
     display: none;
 }
   
@@ -85,7 +85,7 @@
     justify-content: center;
   }
 
-.acces a {
+.acces h3 {
     display: none;
 }
 
