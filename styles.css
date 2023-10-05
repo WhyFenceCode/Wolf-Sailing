@@ -50,7 +50,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
+
+.mens a {
+    display: none;
+}
   
   .womans { 
     grid-area: womans; 
@@ -58,6 +62,10 @@
     align-items: center;
     justify-content: center;
   }
+
+.womans a {
+    display: none;
+}
   
   .junior { 
     grid-area: junior; 
@@ -65,6 +73,10 @@
     align-items: center;
     justify-content: center;
   }
+
+.junior a {
+    display: none;
+}
   
   .acces { 
     grid-area: acces; 
@@ -72,6 +84,10 @@
     align-items: center;
     justify-content: center;
   }
+
+.acces a {
+    display: none;
+}
 
  .actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
