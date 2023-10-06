@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
  .menu {  display: grid;
@@ -62,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
   
   .womans { 
@@ -69,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .junior { 
@@ -76,6 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .acces { 
@@ -83,6 +87,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
  .actions {  display: grid;
@@ -102,6 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .bag { 
@@ -109,6 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .account { 
@@ -116,6 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .content { 
@@ -160,6 +168,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .menu {  display: grid;
@@ -179,6 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     }
   
   .womans { 
@@ -186,6 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .junior { 
@@ -193,6 +204,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }  
   
   .acces { 
@@ -200,6 +212,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .actions {  display: grid;
@@ -219,6 +232,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .bag { 
@@ -226,6 +240,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .account { 
@@ -233,6 +248,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .content { 
