@@ -1,5 +1,4 @@
 function openSearchFunction() {
-  console.error("Search");
   searchUp.classList.add("show");
 }
 
@@ -8,11 +7,13 @@ function closeSearchFunction(){
 }
 
 function bagFunction() {
-  console.error("Bag");
   window.location = "bag.html"
 }
 
 function accountFunction() {
-  console.error("Account");
   window.location = "accounts.html"
+}
+
+function home() {
+  window.location = "index.html"
 }
