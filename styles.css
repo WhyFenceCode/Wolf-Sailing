@@ -14,7 +14,7 @@
       ".";
   }
 
-/*
+/* */
 .iconreptext {
     display: none;
 }
@@ -22,7 +22,7 @@
 .iconrepico {
     display: initial;
 }
-*/
+/**/
 
 .header {  
     display: grid;
@@ -232,7 +232,7 @@
     height: 200vh;
   }
 
-/*
+/**/
     .iconreptext {
         display: initial;
     }
@@ -240,4 +240,4 @@
     .iconrepico {
         display: none;
     }
-*/
+/**/
