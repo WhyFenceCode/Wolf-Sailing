@@ -6,6 +6,7 @@ function main(){
   var feat = obj.feat.fields;
   var feat = obj.type.fields;
   var feat = obj.seri.fields;
+  var feat = obj.pids.fields;
 
   if (feat.length > 0) {
     if (feat.length > 0) {
@@ -44,7 +45,8 @@ function main(){
     seri.forEach(seriFunc);
     }
   }
-  
+
+  pids.forEach(addProduct);
   
 }
 
@@ -57,6 +59,10 @@ function typeFunc(item, index){
 }
 
 function seriFunc(item, index){
+  
+}
+
+function addProduct(item, index){
   
 }
 
