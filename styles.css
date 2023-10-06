@@ -51,10 +51,6 @@
     align-items: center;
     justify-content: center;
 }
-
-.mens h3 {
-    display: none;
-}
   
   .womans { 
     grid-area: womans; 
@@ -62,10 +58,6 @@
     align-items: center;
     justify-content: center;
   }
-
-.womans h3 {
-    display: none;
-}
   
   .junior { 
     grid-area: junior; 
@@ -73,10 +65,6 @@
     align-items: center;
     justify-content: center;
   }
-
-.junior h3 {
-    display: none;
-}
   
   .acces { 
     grid-area: acces; 
@@ -84,10 +72,6 @@
     align-items: center;
     justify-content: center;
   }
-
-.acces h3 {
-    display: none;
-}
 
  .actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -180,10 +164,6 @@
     align-items: center;
     justify-content: center;
     }
-
-    .mens h3 {
-        display: initial;
-    }
   
   .womans { 
     grid-area: womans; 
@@ -191,21 +171,13 @@
     align-items: center;
     justify-content: center;
   }
-
-    .womans h3 {
-        display: initial;
-    }
   
   .junior { 
     grid-area: junior; 
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-    .junior h3 {
-        display: initial;
-    }    
+  }  
   
   .acces { 
     grid-area: acces; 
@@ -213,10 +185,6 @@
     align-items: center;
     justify-content: center;
   }
-
-    .acces h3 {
-         display: initial;
-    }
   
   .actions {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
