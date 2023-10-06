@@ -14,6 +14,14 @@
       ".";
   }
 
+.iconreptext {
+    display: none;
+}
+
+.iconrepico {
+    display: initial;
+}
+
 .header {  
     display: grid;
     width: 100%;
@@ -221,3 +229,11 @@
     grid-area: content; 
     height: 200vh;
   }
+
+    .iconreptext {
+        display: initial;
+    }
+
+    .iconrepico {
+        display: none;
+    }
