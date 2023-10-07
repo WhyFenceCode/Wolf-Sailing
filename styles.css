@@ -176,7 +176,7 @@
     cursor: pointer;
   }
 
-.logo-img{
+.logo img{
     hight: 90%
     object-fit: contain
 }
