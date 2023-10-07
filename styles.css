@@ -48,6 +48,7 @@
 
 .logo img {
     hight: 3vh;
+    object-fit: contain
 }
 
  .menu {  display: grid;
@@ -177,6 +178,7 @@
 
 .logo img {
     hight: 90%
+    object-fit: contain
 }
   
   .menu {  display: grid;
