@@ -47,7 +47,8 @@
   }
 
 .logo img {
-    hight: 50%
+    hight: 3vh;
+    width: 60vw;
 }
 
  .menu {  display: grid;
