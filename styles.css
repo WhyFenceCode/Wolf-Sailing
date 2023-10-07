@@ -46,7 +46,7 @@
     cursor: pointer;
   }
 
-.logo img{
+.limg {
     hight: 3vh;
     object-fit: contain
 }
@@ -176,7 +176,7 @@
     cursor: pointer;
   }
 
-.logo img{
+.limg {
     hight: 90%
     object-fit: contain
 }
