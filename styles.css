@@ -48,7 +48,7 @@
 
 .limg {
     height: 3vh;
-    object-fit: contain
+    /*object-fit: contain*/
 }
 
  .menu {  display: grid;
@@ -178,7 +178,7 @@
 
 .limg {
     height: 5vh
-    object-fit: contain
+    /*object-fit: contain*/
 }
   
   .menu {  display: grid;
