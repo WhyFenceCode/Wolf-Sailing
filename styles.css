@@ -59,8 +59,8 @@
     grid-template-areas:
       "mens womans junior acces";
     grid-area: menu;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
   }
 
  .mens { 
@@ -103,8 +103,8 @@
     grid-template-areas:
       "search bag account";
     grid-area: actions;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
   }
   
   .search { 
@@ -177,7 +177,7 @@
   }
 
 .limg {
-    height: 90%
+    height: 5vh
     object-fit: contain
 }
   
