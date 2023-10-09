@@ -28,6 +28,8 @@
   font-size: 17px;
   border: none;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .popup-content input[type=text]:focus {
@@ -38,12 +40,13 @@
   float: right;
   padding: 1vw 2vw;
   margin-top: 2vw;
-  margin-right: 2vw;
   background: #ddd;
   font-size: 17px;
   border: none;
   cursor: pointer;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .popup-content button:hover {
