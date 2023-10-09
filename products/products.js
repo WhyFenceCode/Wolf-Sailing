@@ -1,4 +1,7 @@
 function main(){
+
+  console.log("Main Function Exec");
+  
   const urlParams = new URLSearchParams(window.location.search);
   const sid = urlParams.get('sid');
 
