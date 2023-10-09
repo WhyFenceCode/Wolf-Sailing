@@ -33,28 +33,6 @@
         </style>
     </head>
     <body style="margin: 0;">
-        <div class="fullscreen-div" id="devloginpanel">
-            <h1>Site Under Development, Please Use Dev-Key</h1>
-            <form id="devlogin">
-                <label for="pwd">Password:</label><br>
-                <input type="password" id="pwd" name="pwd">
-            </form>
-            <br>
-
-            <button id="dev-login" onclick="devLogin()">Login</button>
-            
-            <script>
-              function devLogin() {
-                    var text = "";
-                    text += document.getElementById('pwd').value
-                    if (text == "W0LFD3V") {
-                        document.getElementById("devloginpanel").style.display = "none";
-                    }
-              }
-            </script>
-            
-            
-        </div>
 
         <div class="layout">
           <div class="header">
