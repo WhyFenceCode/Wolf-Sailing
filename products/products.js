@@ -6,10 +6,10 @@ function main(){
   const sid = urlParams.get('sid');
 
   import data from 'products/sid/sid_'+ sid +'.json' assert { type: 'json' };
-  var feat = data.feat.fields;
-  var feat = data.type.fields;
-  var feat = data.seri.fields;
-  var feat = data.pids.fields;
+  var feat = obj.feat.fields;
+  var feat = obj.type.fields;
+  var feat = obj.seri.fields;
+  var feat = obj.pids.fields;
 
   if (feat.length > 0) {
     addDiv("content", "sidcol")
