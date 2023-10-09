@@ -77,6 +77,8 @@ function addDiv(parent, name){
   
   // Append the child element to the parent element
   parent.appendChild(child);
+
+  console.log(parent + name);
 }
 
 function featFunc(item, index){
