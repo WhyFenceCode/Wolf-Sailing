@@ -27,6 +27,7 @@
   margin-top: 2vw;
   font-size: 17px;
   border: none;
+  width: 100%;
 }
 
 .popup-content input[type=text]:focus {
@@ -42,6 +43,7 @@
   font-size: 17px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .popup-content button:hover {
