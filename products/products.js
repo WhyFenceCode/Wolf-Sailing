@@ -10,39 +10,39 @@ function main(){
 
   if (feat.length > 0) {
     if (feat.length > 0) {
-    feat.forEach(featFunc);
+      feat.forEach(featFunc);
     }
   
     if (type.length > 0) {
-    type.forEach(typeFunc);
+      type.forEach(typeFunc);
     }
   
     if (seri.length > 0) {
-    seri.forEach(seriFunc);
+      seri.forEach(seriFunc);
     }
   } else if (type.length > 0) {
     if (feat.length > 0) {
-    feat.forEach(featFunc);
+      feat.forEach(featFunc);
     }
   
     if (type.length > 0) {
-    type.forEach(typeFunc);
+      type.forEach(typeFunc);
     }
   
     if (seri.length > 0) {
-    seri.forEach(seriFunc);
+      seri.forEach(seriFunc);
     }
   } else if (seri.length > 0) {
     if (feat.length > 0) {
-    feat.forEach(featFunc);
+      feat.forEach(featFunc);
     }
   
     if (type.length > 0) {
-    type.forEach(typeFunc);
+      type.forEach(typeFunc);
     }
   
     if (seri.length > 0) {
-    seri.forEach(seriFunc);
+      seri.forEach(seriFunc);
     }
   }
 
