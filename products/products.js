@@ -69,6 +69,8 @@ function main(){
   
 }
 
+main();
+
 function addDiv(parent, name){
   // Get the parent element by class
   var parent = document.querySelector("." + parent);
