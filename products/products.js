@@ -5,11 +5,11 @@ function main(){
   const urlParams = new URLSearchParams(window.location.search);
   const sid = urlParams.get('sid');
 
-  import data from 'products/sid/sid_'+ sid +'.json' assert { type: 'json' };
-  var feat = data.feat;
-  var feat = data.type;
-  var feat = data.seri;
-  var feat = data.pids;
+  import jsondata from 'products/sid/sid_'+ sid +'.json';
+  var feat = jsondata.feat;
+  var feat = jsondata.type;
+  var feat = jsondata.seri;
+  var feat = jsondata.pids;
 
   if (feat.length > 0) {
     addDiv("content", "sidcol")
