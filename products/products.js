@@ -5,11 +5,12 @@ function main(){
   const urlParams = new URLSearchParams(window.location.search);
   const sid = urlParams.get('sid');
 
-  import jsondata from 'products/sid/sid_'+ sid +'.json';
-  var feat = jsondata.feat;
-  var feat = jsondata.type;
-  var feat = jsondata.seri;
-  var feat = jsondata.pids;
+  const data = fs.readFileSync('products/sid/sid_'+ sid +'.json', "utf8");
+  const parsedData = JSON.parse(data)
+  var feat = parsedData.feat;
+  var feat = parsedData.type;
+  var feat = parsedData.seri;
+  var feat = parsedData.pids;
 
   if (feat.length > 0) {
     addDiv("content", "sidcol")
