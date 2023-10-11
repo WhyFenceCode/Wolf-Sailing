@@ -5,8 +5,8 @@ function main(){
   const urlParams = new URLSearchParams(window.location.search);
   const sid = urlParams.get('sid');
 
-  const data = fs.readFileSync('products/sid/sid_'+ sid +'.json', "utf8");
-  const parsedData = JSON.parse(data)
+  const sidData = await fetch(`/products/sid/sid_${sid}.json`);
+  const parsedData = await siddata.json();
   var feat = parsedData.feat;
   var feat = parsedData.type;
   var feat = parsedData.seri;
