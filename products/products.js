@@ -65,7 +65,6 @@ if (feat.length > 0) {
 
 pids.forEach(addProduct);
 
-}
 
 function addDiv(parent, name){
   // Get the parent element by class
