@@ -3,7 +3,7 @@ console.log("Main Function Exec");
 const urlParams = new URLSearchParams(window.location.search);
 const sid = urlParams.get('sid');
 
-const sidData = await fetch(`/products/sid/sid_${sid}.json`);
+const sidData = await fetch(`products/sid/sid_${sid}.json`);
 const parsedData = await sidData.json();
 const feat = parsedData.feat;
 const type = parsedData.type;
