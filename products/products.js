@@ -8,9 +8,9 @@ function main(){
   const sidData = await fetch(`/products/sid/sid_${sid}.json`);
   const parsedData = await siddata.json();
   const feat = parsedData.feat;
-  const feat = parsedData.type;
-  const feat = parsedData.seri;
-  const feat = parsedData.pids;
+  const type = parsedData.type;
+  const seri = parsedData.seri;
+  const pids = parsedData.pids;
 
   if (feat.length > 0) {
     addDiv("content", "sidcol")
