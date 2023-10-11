@@ -6,7 +6,7 @@ async function main(){
   const sid = urlParams.get('sid');
 
   const sidData = await fetch(`/products/sid/sid_${sid}.json`);
-  const parsedData = await siddata.json();
+  const parsedData = await sidData.json();
   const feat = parsedData.feat;
   const type = parsedData.type;
   const seri = parsedData.seri;
