@@ -1,75 +1,71 @@
-async function main(){
+console.log("Main Function Exec");
 
-  console.log("Main Function Exec");
+const urlParams = new URLSearchParams(window.location.search);
+const sid = urlParams.get('sid');
+
+const sidData = await fetch(`/products/sid/sid_${sid}.json`);
+const parsedData = await sidData.json();
+const feat = parsedData.feat;
+const type = parsedData.type;
+const seri = parsedData.seri;
+const pids = parsedData.pids;
+
+if (feat.length > 0) {
+  addDiv("content", "sidcol")
   
-  const urlParams = new URLSearchParams(window.location.search);
-  const sid = urlParams.get('sid');
-
-  const sidData = await fetch(`/products/sid/sid_${sid}.json`);
-  const parsedData = await sidData.json();
-  const feat = parsedData.feat;
-  const type = parsedData.type;
-  const seri = parsedData.seri;
-  const pids = parsedData.pids;
-
   if (feat.length > 0) {
-    addDiv("content", "sidcol")
-    
-    if (feat.length > 0) {
-      addDiv("sidcol", "featcol")
-      feat.forEach(featFunc);
-    }
-  
-    if (type.length > 0) {
-      addDiv("sidcol", "typecol")
-      type.forEach(typeFunc);
-    }
-  
-    if (seri.length > 0) {
-      addDiv("sidcol", "sericol")
-      seri.forEach(seriFunc);
-    }
-  } else if (type.length > 0) {
-    addDiv("content", "sidcol")
-    
-    if (feat.length > 0) {
-      addDiv("sidcol", "featcol")
-      feat.forEach(featFunc);
-    }
-  
-    if (type.length > 0) {
-      addDiv("sidcol", "typecol")
-      type.forEach(typeFunc);
-    }
-  
-    if (seri.length > 0) {
-      addDiv("sidcol", "sericol")
-      seri.forEach(seriFunc);
-    }
-  } else if (seri.length > 0) {
-    addDiv("content", "sidcol")
-    
-    if (feat.length > 0) {
-      addDiv("sidcol", "featcol")
-      feat.forEach(featFunc);
-    }
-  
-    if (type.length > 0) {
-      addDiv("sidcol", "typecol")
-      type.forEach(typeFunc);
-    }
-  
-    if (seri.length > 0) {
-      addDiv("sidcol", "sericol")
-      seri.forEach(seriFunc);
-    }
+    addDiv("sidcol", "featcol")
+    feat.forEach(featFunc);
   }
 
-  pids.forEach(addProduct);
+  if (type.length > 0) {
+    addDiv("sidcol", "typecol")
+    type.forEach(typeFunc);
+  }
+
+  if (seri.length > 0) {
+    addDiv("sidcol", "sericol")
+    seri.forEach(seriFunc);
+  }
+} else if (type.length > 0) {
+  addDiv("content", "sidcol")
   
+  if (feat.length > 0) {
+    addDiv("sidcol", "featcol")
+    feat.forEach(featFunc);
+  }
+
+  if (type.length > 0) {
+    addDiv("sidcol", "typecol")
+    type.forEach(typeFunc);
+  }
+
+  if (seri.length > 0) {
+    addDiv("sidcol", "sericol")
+    seri.forEach(seriFunc);
+  }
+} else if (seri.length > 0) {
+  addDiv("content", "sidcol")
+  
+  if (feat.length > 0) {
+    addDiv("sidcol", "featcol")
+    feat.forEach(featFunc);
+  }
+
+  if (type.length > 0) {
+    addDiv("sidcol", "typecol")
+    type.forEach(typeFunc);
+  }
+
+  if (seri.length > 0) {
+    addDiv("sidcol", "sericol")
+    seri.forEach(seriFunc);
+  }
 }
 
-main();
+pids.forEach(addProduct);
+
+}
 
 function addDiv(parent, name){
   // Get the parent element by class
