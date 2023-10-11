@@ -7,10 +7,10 @@ function main(){
 
   const sidData = await fetch(`/products/sid/sid_${sid}.json`);
   const parsedData = await siddata.json();
-  var feat = parsedData.feat;
-  var feat = parsedData.type;
-  var feat = parsedData.seri;
-  var feat = parsedData.pids;
+  const feat = parsedData.feat;
+  const feat = parsedData.type;
+  const feat = parsedData.seri;
+  const feat = parsedData.pids;
 
   if (feat.length > 0) {
     addDiv("content", "sidcol")
