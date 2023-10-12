@@ -10,7 +10,7 @@ const type = parsedData.type;
 const seri = parsedData.seri;
 const pids = parsedData.pids;
 
-topImg(parsedData.img);
+topImg(parsedData.img, parsedData.name);
 
 if (feat.length > 0) {
   addDiv("content", "sidcol")
@@ -69,34 +69,23 @@ pids.forEach(addProduct);
 
 
 function addDiv(parent, name){
-  // Get the parent element by class
   var parent = document.querySelector("." + parent);
-  
-  // Create a new div element
   var child = document.createElement("div");
-  
-  // Set the class attribute of the child element
   child.setAttribute("class", name);
-  
-  // Append the child element to the parent element
   parent.appendChild(child);
-
   console.log(parent + name);
 }
 
-function topImg(url){
+function topImg(url, text){
 
   addDiv("content", "topImage");
   var img = document.createElement("img");
-
-  // set the src attribute of the image to the url
   img.src = url;
-  
-
+  var addedh1 = document.createElement("h1");
+  h1.textContent = text;
   var imgParent = document.querySelector(".topImage");
-  
-  // append the image to the body of the document
   imgParent.appendChild(img);
+  imgParent..appendChild(addedh1);
 }
 
 function featFunc(item, index){
