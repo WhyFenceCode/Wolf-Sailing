@@ -36,6 +36,7 @@
       "menu actions";
     grid-area: header;
     position: fixed;
+    background-color: white;
   }
 
 .logo { 
@@ -166,6 +167,7 @@
       ". logo . menu . actions .";
     grid-area: header;
     position: fixed;
+    background-color: white;
   }
   
   .logo { 
