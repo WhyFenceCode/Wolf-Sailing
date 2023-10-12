@@ -130,7 +130,7 @@ async function typeFunc(item, index){
   const typesidData = await fetch(`products/sid/sid_${item}.json`);
   const typeparsedData = await typesidData.json();
   
-  addLink("typecol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", typeparsedData.name);
+  addLink("typecol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=" + item, typeparsedData.name);
   addBr("typecol");
 }
 
@@ -138,7 +138,7 @@ async function seriFunc(item, index){
   const serisidData = await fetch(`products/sid/sid_${item}.json`);
   const seriparsedData = await serisidData.json();
   
-  addLink("sericol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", seriparsedData.name);
+  addLink("sericol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=" + item, seriparsedData.name);
   addBr("sericol");
 }
 
