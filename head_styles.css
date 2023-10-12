@@ -185,7 +185,7 @@
   }
 
 .limg {
-    height: 6vh
+    height: 8vh
     /*object-fit: contain*/
 }
   
@@ -197,8 +197,8 @@
     grid-template-areas:
       "mens womans junior acces";
     grid-area: menu;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
   
   .mens { 
@@ -241,8 +241,8 @@
     grid-template-areas:
       "search bag account";
     grid-area: actions;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
   
   .search { 
