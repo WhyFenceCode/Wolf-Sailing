@@ -83,7 +83,18 @@ function addDiv(parent, name){
 }
 
 function topImg(url){
+  var img = document.createElement("img");
+
+  // set the src attribute of the image to the url
+  img.src = url;
   
+  // set the class attribute of the image to topImage
+  img.setAttribute("class", "topImage");
+
+  var imgParent = document.querySelector("content");
+  
+  // append the image to the body of the document
+  imgParent.appendChild(img);
 }
 
 function featFunc(item, index){
