@@ -18,3 +18,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.sidcol {
+  width: 95vh;
+  height: auto;
+}
+
+.featcol {
+  height: 100%;
+  width: 33.333%;
+}
+
+.typecol{
+  height: 100%;
+  width: 33.333%;
+}
+
+.sericol{
+  height: 100%;
+  width: 33.333%;
+}
