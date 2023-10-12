@@ -10,6 +10,8 @@ const type = parsedData.type;
 const seri = parsedData.seri;
 const pids = parsedData.pids;
 
+topImg(parsedData.img);
+
 if (feat.length > 0) {
   addDiv("content", "sidcol")
   
