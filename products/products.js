@@ -104,3 +104,11 @@ function addProduct(item, index){
   
 }
 
+function addLink(parent, url, text){
+  var a = document.createElement("a");
+  a.href = url;
+  a.textContent = text;
+  var linkParent = document.querySelector("." + parent);
+  linkParent.appendChild(a);
+}
+
