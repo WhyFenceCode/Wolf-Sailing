@@ -122,7 +122,7 @@ async function featFunc(item, index){
   const featsidData = await fetch(`products/sid/sid_${item}.json`);
   const featparsedData = await featsidData.json();
   
-  addLink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", featparsedData.name);
+  addLink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=" + item, featparsedData.name);
   addBr("featcol");
 }
 
