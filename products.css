@@ -24,6 +24,8 @@
   height: auto;
   display: flex;
   margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background-color: #e9e9e9;
 }
 
