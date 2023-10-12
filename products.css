@@ -22,6 +22,7 @@
 .sidcol {
   width: 95vh;
   height: auto;
+  display: flex;
 }
 
 .featcol {
