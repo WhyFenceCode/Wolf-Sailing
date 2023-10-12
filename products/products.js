@@ -148,3 +148,8 @@ function addLink(parent, url, text){
   linkParent.appendChild(a);
 }
 
+function addBt(parent){
+  var brParent = document.querySelector("." + parent);
+  var br = document.createElement('br');
+  brParent.appendChild(br);
+}
