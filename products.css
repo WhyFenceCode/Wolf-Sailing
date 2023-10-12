@@ -25,6 +25,16 @@
   display: flex;
 }
 
+.sidcol a:link, .sidcol a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.sidcol a:hover, .sidcol a:active {
+  text-decoration: underline;
+  color: black;
+}
+
 .featcol {
   height: 100%;
   width: 33.333%;
