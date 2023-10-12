@@ -167,7 +167,14 @@
       ". logo . menu . actions .";
     grid-area: header;
     position: fixed;
-    background-color: white;
+  }
+
+  .header:hover {
+    background-color: #ffffff;
+  }
+
+  .header.scrolled {
+    background-color: #ffffff;
   }
   
   .logo { 
