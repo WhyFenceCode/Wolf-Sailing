@@ -2,3 +2,8 @@
   width: 100vw;
   height: 50vh;
 }
+
+.topImage > img{
+  width: 100%
+  height: 100%
+}
