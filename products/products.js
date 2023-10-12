@@ -3,6 +3,8 @@ console.log("Main Function Exec");
 const urlParams = new URLSearchParams(window.location.search);
 const sid = urlParams.get('sid');
 
+let colcount = 0;
+
 const sidData = await fetch(`products/sid/sid_${sid}.json`);
 const parsedData = await sidData.json();
 const feat = parsedData.feat;
@@ -17,52 +19,64 @@ if (feat.length > 0) {
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    colcount ++;
     seri.forEach(seriFunc);
   }
+  changeWidth(['sericol', 'featcol', 'typecol'], 100 / (colcount + "%"));
 } else if (type.length > 0) {
   addDiv("content", "sidcol")
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    colcount ++;
     seri.forEach(seriFunc);
   }
+  changeWidth(['sericol', 'featcol', 'typecol'], 100 / (colcount + "%"));
 } else if (seri.length > 0) {
   addDiv("content", "sidcol")
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    colcount ++;
     seri.forEach(seriFunc);
   }
+  changeWidth(['sericol', 'featcol', 'typecol'], 100 / (colcount + "%"));
 }
 
 pids.forEach(addProduct);
@@ -111,6 +125,19 @@ async function seriFunc(item, index){
 
 function addProduct(item, index){
   
+}
+
+function changeWidth(classNames, newWidth) {
+    // Loop through each class name
+    for (var j = 0; j < classNames.length; j++) {
+        // Get all elements with the current class name
+        var elements = document.getElementsByClassName(classNames[j]);
+
+        // Loop through each element and change the width
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.width = newWidth;
+        }
+    }
 }
 
 function addLink(parent, url, text){
