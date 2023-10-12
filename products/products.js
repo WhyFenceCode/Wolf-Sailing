@@ -82,7 +82,7 @@ function topImg(url, text){
   var img = document.createElement("img");
   img.src = url;
   var addedh1 = document.createElement("h1");
-  h1.textContent = text;
+  addedh1.textContent = text;
   var imgParent = document.querySelector(".topImage");
   imgParent.appendChild(img);
   imgParent.appendChild(addedh1);
