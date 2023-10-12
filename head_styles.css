@@ -184,10 +184,10 @@
     cursor: pointer;
   }
 
-.limg {
+  .limg {
     height: 7vh
     /*object-fit: contain*/
-}
+  }
   
   .menu {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -201,8 +201,8 @@
     margin-bottom: 4vh;
   }
 
-  .your-class-name {
-    color: #ffb700; /* Change this to your desired color */
+  .header:hover {
+    color: #ffb700;
   }
   
   .mens { 
