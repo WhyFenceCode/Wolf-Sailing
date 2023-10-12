@@ -200,10 +200,6 @@
     margin-top: 4vh;
     margin-bottom: 4vh;
   }
-
-  .header:hover {
-    color: #ffb700;
-  }
   
   .mens { 
     grid-area: mens; 
@@ -235,6 +231,19 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+
+  .mens:hover a {
+    color: #ffb700;
+  }
+  .womans:hover a {
+    color: #ffb700;
+  } 
+  .junior:hover a {
+    color: #ffb700;
+  }
+  .acces:hover a {
+    color: #ffb700;
   }
   
   .actions {  display: grid;
