@@ -24,6 +24,7 @@
   height: auto;
   display: flex;
   margin: auto;
+  background-color: #f9f9f9;
 }
 
 .sidcol a:link, .sidcol a:visited{
