@@ -82,6 +82,10 @@ function addDiv(parent, name){
   console.log(parent + name);
 }
 
+function topImg(url){
+  
+}
+
 function featFunc(item, index){
   
 }
