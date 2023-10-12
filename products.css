@@ -4,6 +4,7 @@
   overflow: hidden;
   text-align: center;
   color: white;
+  position: relative;
 }
 
 .topImage > img{
