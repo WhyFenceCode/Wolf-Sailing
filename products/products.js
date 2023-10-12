@@ -93,7 +93,7 @@ function topImg(url){
   // set the class attribute of the image to topImage
   img.setAttribute("class", "topImage");
 
-  var imgParent = document.querySelector("content");
+  var imgParent = document.querySelector(".content");
   
   // append the image to the body of the document
   imgParent.appendChild(img);
