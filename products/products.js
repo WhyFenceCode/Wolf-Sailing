@@ -89,15 +89,24 @@ function topImg(url, text){
 }
 
 function featFunc(item, index){
+  const featsidData = await fetch(`products/sid/sid_${item}.json`);
+  const featparsedData = await featsidData.json();
   
+  addlink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", featparsedData.name);
 }
 
 function typeFunc(item, index){
+  const typesidData = await fetch(`products/sid/sid_${item}.json`);
+  const typeparsedData = await typesidData.json();
   
+  addlink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", typeparsedData.name);
 }
 
 function seriFunc(item, index){
+  const serisidData = await fetch(`products/sid/sid_${item}.json`);
+  const seriparsedData = await serisidData.json();
   
+  addlink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", seriparsedData.name);
 }
 
 function addProduct(item, index){
