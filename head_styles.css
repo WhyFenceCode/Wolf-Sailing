@@ -233,16 +233,16 @@
     cursor: pointer;
   }
 
-  a.mens:hover {
+  .mens:hover {
     color: #ffb700;
   }
-  a.womans:hover {
+  .womans:hover {
     color: #ffb700;
   } 
-  a.junior:hover {
+  .junior:hover {
     color: #ffb700;
   }
-  a.acces:hover {
+  .acces:hover {
     color: #ffb700;
   }
   
