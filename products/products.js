@@ -85,7 +85,7 @@ function topImg(url, text){
   h1.textContent = text;
   var imgParent = document.querySelector(".topImage");
   imgParent.appendChild(img);
-  imgParent..appendChild(addedh1);
+  imgParent.appendChild(addedh1);
 }
 
 function featFunc(item, index){
