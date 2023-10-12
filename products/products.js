@@ -19,18 +19,21 @@ if (feat.length > 0) {
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    addH3("featcol", "Featured")
     colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    addH3("typecol", "Type")
     colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    addH3("sericol", "Series")
     colcount ++;
     seri.forEach(seriFunc);
   }
@@ -40,18 +43,21 @@ if (feat.length > 0) {
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    addH3("featcol", "Featured")
     colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    addH3("typecol", "Type")
     colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    addH3("sericol", "Series")
     colcount ++;
     seri.forEach(seriFunc);
   }
@@ -61,18 +67,21 @@ if (feat.length > 0) {
   
   if (feat.length > 0) {
     addDiv("sidcol", "featcol")
+    addH3("featcol", "Featured")
     colcount ++;
     feat.forEach(featFunc);
   }
 
   if (type.length > 0) {
     addDiv("sidcol", "typecol")
+    addH3("typecol", "Type")
     colcount ++;
     type.forEach(typeFunc);
   }
 
   if (seri.length > 0) {
     addDiv("sidcol", "sericol")
+    addH3("sericol", "Series")
     colcount ++;
     seri.forEach(seriFunc);
   }
@@ -100,6 +109,13 @@ function topImg(url, text){
   var imgParent = document.querySelector(".topImage");
   imgParent.appendChild(img);
   imgParent.appendChild(addedh1);
+}
+
+function addH3(parent, text){
+  var addedh3 = document.createElement("h3");
+  addedh3.textContent = text;
+  var h3parent = document.querySelector("." + parent);
+  h3parent.appendChild(addedh3);
 }
 
 async function featFunc(item, index){
