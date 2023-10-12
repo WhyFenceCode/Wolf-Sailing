@@ -107,6 +107,7 @@ async function featFunc(item, index){
   const featparsedData = await featsidData.json();
   
   addLink("featcol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", featparsedData.name);
+  addBr("featcol");
 }
 
 async function typeFunc(item, index){
@@ -114,6 +115,7 @@ async function typeFunc(item, index){
   const typeparsedData = await typesidData.json();
   
   addLink("typecol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", typeparsedData.name);
+  addBr("typecol");
 }
 
 async function seriFunc(item, index){
@@ -121,6 +123,7 @@ async function seriFunc(item, index){
   const seriparsedData = await serisidData.json();
   
   addLink("sericol", "https://whyfencecode.github.io/Wolf-Sailing/products.html?sid=${item}", seriparsedData.name);
+  addBr("sericol");
 }
 
 function addProduct(item, index){
@@ -148,7 +151,7 @@ function addLink(parent, url, text){
   linkParent.appendChild(a);
 }
 
-function addBt(parent){
+function addBr(parent){
   var brParent = document.querySelector("." + parent);
   var br = document.createElement('br');
   brParent.appendChild(br);
