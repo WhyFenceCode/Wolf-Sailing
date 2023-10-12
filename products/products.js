@@ -85,15 +85,15 @@ function addDiv(parent, name){
 }
 
 function topImg(url){
+
+  addDiv("content", "topImage");
   var img = document.createElement("img");
 
   // set the src attribute of the image to the url
   img.src = url;
   
-  // set the class attribute of the image to topImage
-  img.setAttribute("class", "topImage");
 
-  var imgParent = document.querySelector(".content");
+  var imgParent = document.querySelector(".topImage");
   
   // append the image to the body of the document
   imgParent.appendChild(img);
