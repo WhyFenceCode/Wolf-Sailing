@@ -23,6 +23,7 @@
   width: 95vw;
   height: auto;
   display: flex;
+  margin: auto;
 }
 
 .sidcol a:link, .sidcol a:visited{
