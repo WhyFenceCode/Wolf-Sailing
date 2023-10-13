@@ -97,12 +97,6 @@
     "prodcolors prodbuy";
 }
 
-.prodimg { 
-  grid-area: prodimg;
-  background-size: cover;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .prodname { 
   grid-area: prodname;
   text-align: center;
@@ -113,6 +107,12 @@
 .prodcolors { 
   grid-area: prodcolors;
   background-color: #f9f9f9;
+}
+
+.prodimg { 
+  grid-area: prodimg;
+  background-size: cover;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .prodbuy { 
