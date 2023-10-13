@@ -210,7 +210,7 @@ function addBr(parent){
   brParent.appendChild(br);
 }
 
-function replaceAt(origString, index, replacement) {
+function replaceAt(origString, index, replaceChar) {
    let arr = origString.split('');
    arr[index] = replaceChar;
    return arr.join('');
@@ -222,28 +222,28 @@ function numtoa(numb){
       numb = replaceAt(numb, i, "a")
     }
     if (numb.charAt(i) == "2"){
-      item.charAt(i) = "b";
+      numb = replaceAt(numb, i, "b")
     }
     if (numb.charAt(i) == "3"){
-      item.charAt(i) = "c";
+      numb = replaceAt(numb, i, "c")
     }
     if (numb.charAt(i) == "4"){
-      item.charAt(i) = "d";
+      numb = replaceAt(numb, i, "d")
     }
     if (numb.charAt(i) == "5"){
-      item.charAt(i) = "e";
+      numb = replaceAt(numb, i, "e")
     }
     if (numb.charAt(i) == "6"){
-      item.charAt(i) = "f";
+      numb = replaceAt(numb, i, "f")
     }
     if (numb.charAt(i) == "7"){
-      item.charAt(i) = "g";
+      numb = replaceAt(numb, i, "g")
     }
     if (numb.charAt(i) == "8"){
-      item.charAt(i) = "h";
+      numb = replaceAt(numb, i, "h")
     }
     if (numb.charAt(i) == "9"){
-      item.charAt(i) = "i";
+      numb = replaceAt(numb, i, "i")
     }
   }
 }
