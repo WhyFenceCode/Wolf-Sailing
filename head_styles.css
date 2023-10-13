@@ -166,6 +166,7 @@
       ". logo . menu . actions .";
     grid-area: header;
     position: fixed;
+    transition: background-color 0.3s;
   }
 
   .header:hover {
