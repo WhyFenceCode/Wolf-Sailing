@@ -210,14 +210,16 @@ function addBr(parent){
   brParent.appendChild(br);
 }
 
-function replaceAt(index, replacement) {
-    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+function replaceAt(origString, index, replacement) {
+   let arr = origString.split('');
+   arr[index] = replaceChar;
+   return arr.join('');
 }
 
 function numtoa(numb){
   for (let i = 0; i < numb.length; i++) {
     if (numb.charAt(i) == "1"){
-      numb = numb.replaceAt(i, "a")
+      numb = replaceAt(numb, i, "a")
     }
     if (numb.charAt(i) == "2"){
       item.charAt(i) = "b";
