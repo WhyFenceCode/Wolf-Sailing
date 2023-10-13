@@ -169,6 +169,8 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
+  const pidData = await fetch(`products/pid/pid_${item}.json`);
+  const parsedpidData = await pidData.json();
 
   
   let p1 = document.querySelector(".col" + prodcol);
