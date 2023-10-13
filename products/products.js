@@ -169,12 +169,32 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
-  item = numtoa(item);
-  add2Div("col" + prodcol, "product", item);
-  add3Div(item, "prodimg");
-  add3Div(item, "prodname");
-  add3Div(item, "prodcolors");
-  add3Div(item, "prodbuy");
+
+  
+  let p1 = document.querySelector("col" + prodcol);
+  let c1 = document.createElement("div");
+  c1.setAttribute("class", "product");
+  let p2 = p1.appendChild(c1);
+  let c2 = document.createElement("div");
+  c2.setAttribute("class", "prodimg");
+  let p3 = p2.appendChild(c2);
+  let c3 = document.createElement("div");
+  c3.setAttribute("class", "prodname");
+  let p4 = p3.appendChild(c3);
+  let c4 = document.createElement("div");
+  c4.setAttribute("class", "prodcolors");
+  let p5 = p4.appendChild(c4);
+  let c5 = document.createElement("div");
+  c5.setAttribute("class", "prodbuy");
+  let p6 = p5.appendChild(c5);
+
+  
+  // item = numtoa(item);
+  // add2Div("col" + prodcol, "product", item);
+  // add3Div(item, "prodimg");
+  // add3Div(item, "prodname");
+  // add3Div(item, "prodcolors");
+  // add3Div(item, "prodbuy");
   if (prodcol < 3){
     prodcol ++;
   }else{
