@@ -190,13 +190,8 @@ function addProduct(item, index){
   c5.setAttribute("class", "prodbuy");
   p2.appendChild(c5);
 
+  c2.style.backgroundImage = 'url("' + parsedpidData.img + '")';
   
-  // item = numtoa(item);
-  // add2Div("col" + prodcol, "product", item);
-  // add3Div(item, "prodimg");
-  // add3Div(item, "prodname");
-  // add3Div(item, "prodcolors");
-  // add3Div(item, "prodbuy");
   if (prodcol < 3){
     prodcol ++;
   }else{
