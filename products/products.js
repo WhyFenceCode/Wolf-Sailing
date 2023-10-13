@@ -182,15 +182,24 @@ async function addProduct(item, index){
   p2.appendChild(c2);
   let c3 = document.createElement("div");
   c3.setAttribute("class", "prodname");
-  p2.appendChild(c3);
+  let namep = p2.appendChild(c3);
   let c4 = document.createElement("div");
   c4.setAttribute("class", "prodcolors");
   p2.appendChild(c4);
   let c5 = document.createElement("div");
   c5.setAttribute("class", "prodbuy");
-  p2.appendChild(c5);
+  let buyp = p2.appendChild(c5);
 
   c2.style.backgroundImage = 'url("' + parsedpidData.img + '")';
+  let nameh3 = document.createElement('h3');
+  nameh3.textContent = parsedpidData.name;
+  namep.appendChild(nameh3);
+
+  let buyh3 = document.createElement('h3');
+  buyh3.textContent = "Check It Out";
+  buyp.appendChild(buyh3);
+  
+  
   
   if (prodcol < 3){
     prodcol ++;
