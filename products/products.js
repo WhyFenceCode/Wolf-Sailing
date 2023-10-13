@@ -240,9 +240,9 @@ function addBr(parent){
 }
 
 function addColorBox(parent){
-  for (step = 1; step <= 10; step += 1) {
+  for (let i = 0; i <= 10; i++) {
     let colorbox = document.createElement("div");
-    colorbox.setAttribute("class", "color" + step);
+    colorbox.setAttribute("class", "color" + i);
     parent.appendChild(colorbox);
   }
 }
