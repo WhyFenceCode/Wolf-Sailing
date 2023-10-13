@@ -95,7 +95,10 @@
     "prodcolors prodbuy";
 }
 
-.prodimg { grid-area: prodimg; }
+.prodimg { 
+  grid-area: prodimg;
+  background-size: cover;
+}
 
 .prodname { grid-area: prodname; }
 
