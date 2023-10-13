@@ -59,7 +59,8 @@
 
 .products {  
   width: 95vw;
-  hight: auto;
+  height: 10vh;
+  /*height: auto;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
