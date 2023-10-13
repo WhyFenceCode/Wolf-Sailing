@@ -199,7 +199,7 @@ async function addProduct(item, index){
 
   buyh3.onclick = function() {
     // Your code here
-    window.location = "product.html?sid=" + item;
+    window.location = "product.html?pid=" + item;
   };
 
   buyp.appendChild(buyh3);
