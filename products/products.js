@@ -251,7 +251,7 @@ function addColorBox(parent, colors){
       let colordiv = document.createElement("div");
       colordiv.setAttribute("class", "color");
       let colordivchange = colorparent.appendChild(colordiv);
-      colordivchange.style.backgroundColor = colors[i];
+      colordivchange.style.backgroundColor = colors[i - 1];
     }
   }
 }
