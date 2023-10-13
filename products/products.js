@@ -246,11 +246,11 @@ function addColorBox(parent, colors){
   for (let i = 1; i <= 10; i++) {
     let colorbox = document.createElement("div");
     colorbox.setAttribute("class", "color" + i);
-    colorparent = parent.appendChild(colorbox);
+    let colorparent = parent.appendChild(colorbox);
     if (colors[i] != "undefined"){
       let colordiv = document.createElement("div");
       colordiv.setAttribute("class", "color");
-      colordivchange = colorparent.appendChild(colordiv);
+      let colordivchange = colorparent.appendChild(colordiv);
       colordivchange.style.backgroundColor = colors[i];
     }
   }
