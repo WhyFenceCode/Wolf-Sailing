@@ -130,7 +130,8 @@
 .color {
   aspect-ratio: 1 / 1;
   width: 80%;
-  border-radius: 45%;
+  border-radius: 50%;
+  margin: auto;
   border: 0.5vh solid black;
 }
 
