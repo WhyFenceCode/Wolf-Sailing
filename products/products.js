@@ -171,31 +171,31 @@ async function seriFunc(item, index){
 
 function addProduct(item, index){
   for (let i = 0; i < item.length; i++) {
-    if (item.charAt(i) == 1){
+    if (item.charAt(i) == "1"){
       item.charAt(i) = "a";
     }
-    if (item.charAt(i) == 2){
+    if (item.charAt(i) == "2"){
       item.charAt(i) = "b";
     }
-    if (item.charAt(i) == 3){
+    if (item.charAt(i) == "3"){
       item.charAt(i) = "c";
     }
-    if (item.charAt(i) == 4){
+    if (item.charAt(i) == "4"){
       item.charAt(i) = "d";
     }
-    if (item.charAt(i) == 5){
+    if (item.charAt(i) == "5"){
       item.charAt(i) = "e";
     }
-    if (item.charAt(i) == 6){
+    if (item.charAt(i) == "6"){
       item.charAt(i) = "f";
     }
-    if (item.charAt(i) == 7){
+    if (item.charAt(i) == "7"){
       item.charAt(i) = "g";
     }
-    if (item.charAt(i) == 8){
+    if (item.charAt(i) == "8"){
       item.charAt(i) = "h";
     }
-    if (item.charAt(i) == 9{
+    if (item.charAt(i) == "9"){
       item.charAt(i) = "i";
     }
   }
