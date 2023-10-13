@@ -1,4 +1,5 @@
 console.log("Main Function Exec");
+let prodcol = 1;
 
 const urlParams = new URLSearchParams(window.location.search);
 const sid = urlParams.get('sid');
@@ -152,7 +153,15 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
-  
+  addDiv("col" + prodcol, "product");
+  addDiv("product", "prodimg");
+  addDiv("product", "prodcolors");
+  addDiv("product", "prodbuy");
+  if (prodcol < 3){
+    prodcol ++;
+  }else{
+    prodcol = 1;
+  }
 }
 
 function changeWidth(classNames, newWidth) {
