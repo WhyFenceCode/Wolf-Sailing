@@ -170,35 +170,6 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
-  for (let i = 0; i < item.length; i++) {
-    if (item.charAt(i) == "1"){
-      hello.replaceAt(i, "a")
-    }
-    if (item.charAt(i) == "2"){
-      item.charAt(i) = "b";
-    }
-    if (item.charAt(i) == "3"){
-      item.charAt(i) = "c";
-    }
-    if (item.charAt(i) == "4"){
-      item.charAt(i) = "d";
-    }
-    if (item.charAt(i) == "5"){
-      item.charAt(i) = "e";
-    }
-    if (item.charAt(i) == "6"){
-      item.charAt(i) = "f";
-    }
-    if (item.charAt(i) == "7"){
-      item.charAt(i) = "g";
-    }
-    if (item.charAt(i) == "8"){
-      item.charAt(i) = "h";
-    }
-    if (item.charAt(i) == "9"){
-      item.charAt(i) = "i";
-    }
-  }
   add2Div("col" + prodcol, "product", item);
   add3Div(item, "prodimg");
   add3Div(item, "prodname");
@@ -240,4 +211,36 @@ function addBr(parent){
 
 function replaceAt(index, replacement) {
     return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+}
+
+function numtoa(numb){
+  for (let i = 0; i < numb.length; i++) {
+    if (numb.charAt(i) == "1"){
+      numb = numb.replaceAt(i, "a")
+    }
+    if (numb.charAt(i) == "2"){
+      item.charAt(i) = "b";
+    }
+    if (numb.charAt(i) == "3"){
+      item.charAt(i) = "c";
+    }
+    if (numb.charAt(i) == "4"){
+      item.charAt(i) = "d";
+    }
+    if (numb.charAt(i) == "5"){
+      item.charAt(i) = "e";
+    }
+    if (numb.charAt(i) == "6"){
+      item.charAt(i) = "f";
+    }
+    if (numb.charAt(i) == "7"){
+      item.charAt(i) = "g";
+    }
+    if (numb.charAt(i) == "8"){
+      item.charAt(i) = "h";
+    }
+    if (numb.charAt(i) == "9"){
+      item.charAt(i) = "i";
+    }
+  }
 }
