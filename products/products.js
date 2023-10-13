@@ -172,7 +172,7 @@ async function seriFunc(item, index){
 function addProduct(item, index){
   for (let i = 0; i < item.length; i++) {
     if (item.charAt(i) == "1"){
-      item.charAt(i) = "a";
+      hello.replaceAt(i, "a")
     }
     if (item.charAt(i) == "2"){
       item.charAt(i) = "b";
@@ -236,4 +236,8 @@ function addBr(parent){
   var brParent = document.querySelector("." + parent);
   var br = document.createElement('br');
   brParent.appendChild(br);
+}
+
+function replaceAt(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
