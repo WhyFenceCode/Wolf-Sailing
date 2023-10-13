@@ -170,6 +170,7 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
+  item = numtoa(item);
   add2Div("col" + prodcol, "product", item);
   add3Div(item, "prodimg");
   add3Div(item, "prodname");
