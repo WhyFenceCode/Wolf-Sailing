@@ -105,10 +105,27 @@
   background-color: #f9f9f9;
 }
 
-.prodcolors { 
-  grid-area: prodcolors;
+.prodcolors {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "color1 color2 color3 color4 color5"
+    "color6 color7 color8 color9 color10"; 
+  grid-area: prodcolors; 
   background-color: #f9f9f9;
 }
+.color1 { grid-area: color1; }
+.color2 { grid-area: color2; }
+.color3 { grid-area: color3; }
+.color4 { grid-area: color4; }
+.color5 { grid-area: color5; }
+.color6 { grid-area: color6; }
+.color7 { grid-area: color7; }
+.color8 { grid-area: color8; }
+.color9 { grid-area: color9; }
+.color10 { grid-area: color10; }
 
 .prodimg { 
   grid-area: prodimg;
