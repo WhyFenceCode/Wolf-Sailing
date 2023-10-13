@@ -166,19 +166,15 @@
       ". logo . menu . actions .";
     grid-area: header;
     position: fixed;
-    color: white;
     transition: background-color 0.3s;
-    transition: color 0.3s;
   }
 
   .header:hover {
     background-color: #ffffff;
-    color: black;
   }
 
   .scrolled {
     background-color: #ffffff;
-    color: black;
   }
   
   .logo { 
