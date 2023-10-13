@@ -171,7 +171,6 @@ async function seriFunc(item, index){
 async function addProduct(item, index){
   const pidData = await fetch(`products/pid/pid_${item}.json`);
   const parsedpidData = await pidData.json();
-
   
   let p1 = document.querySelector(".col" + prodcol);
   let c1 = document.createElement("div");
@@ -197,9 +196,13 @@ async function addProduct(item, index){
 
   let buyh3 = document.createElement('h3');
   buyh3.textContent = "Check It Out";
+
+  buyh3.onclick = function() {
+    // Your code here
+    window.location = "product.html?sid=" + item;
+  };
+
   buyp.appendChild(buyh3);
-  
-  
   
   if (prodcol < 3){
     prodcol ++;
