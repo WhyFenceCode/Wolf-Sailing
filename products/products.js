@@ -171,7 +171,7 @@ async function seriFunc(item, index){
 function addProduct(item, index){
 
   
-  let p1 = document.querySelector("col" + prodcol);
+  let p1 = document.querySelector(".col" + prodcol);
   let c1 = document.createElement("div");
   c1.setAttribute("class", "product");
   let p2 = p1.appendChild(c1);
