@@ -104,8 +104,8 @@ function addDiv(parent, name){
 function add2Div(parent, name, classname){
   var parent = document.querySelector("." + parent);
   var child = document.createElement("div");
-  child.setAttribute("class", name);
-  child.setAttribute("class", classname);
+  child..classList.add(name);
+  child..classList.add(classname);
   parent.appendChild(child);
   console.log(parent + name);
 }
