@@ -155,6 +155,7 @@ async function seriFunc(item, index){
 function addProduct(item, index){
   addDiv("col" + prodcol, "product");
   addDiv("product", "prodimg");
+  addDiv("product", "prodname");
   addDiv("product", "prodcolors");
   addDiv("product", "prodbuy");
   if (prodcol < 3){
