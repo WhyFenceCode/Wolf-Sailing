@@ -105,7 +105,7 @@ function add2Div(parent, name, classname){
   var parent = document.querySelector("." + parent);
   var child = document.createElement("div");
   child.classList.add(name);
-  child.classList.add(classname);
+  child.classList.add("\\31 " + classname);
   parent.appendChild(child);
   console.log(parent + name);
 }
