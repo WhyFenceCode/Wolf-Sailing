@@ -101,6 +101,15 @@ function addDiv(parent, name){
   console.log(parent + name);
 }
 
+function add2Div(parent, name, classname){
+  var parent = document.querySelector("." + parent);
+  var child = document.createElement("div");
+  child.setAttribute("class", name);
+  child.setAttribute("class", classname);
+  parent.appendChild(child);
+  console.log(parent + name);
+}
+
 function addprodcolums(){
   addDiv("content", "products");
   addDiv("products", "col1");
@@ -153,11 +162,11 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
-  addDiv("col" + prodcol, "product");
-  addDiv("product", "prodimg");
-  addDiv("product", "prodname");
-  addDiv("product", "prodcolors");
-  addDiv("product", "prodbuy");
+  add2Div("col" + prodcol, "product", item);
+  addDiv(item, "prodimg");
+  addDiv(item, "prodname");
+  addDiv(item, "prodcolors");
+  addDiv(item, "prodbuy");
   if (prodcol < 3){
     prodcol ++;
   }else{
