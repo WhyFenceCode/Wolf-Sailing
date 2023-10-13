@@ -185,7 +185,9 @@ async function addProduct(item, index){
   let c4 = document.createElement("div");
   c4.setAttribute("class", "prodcolors");
   p2.appendChild(c4);
-  addColorBox(c4);
+  
+  addColorBox(c4, parsedpidData.colors);
+  
   let c5 = document.createElement("div");
   c5.setAttribute("class", "prodbuy");
   let buyp = p2.appendChild(c5);
@@ -239,10 +241,15 @@ function addBr(parent){
   brParent.appendChild(br);
 }
 
-function addColorBox(parent){
+function addColorBox(parent, colors){
+  
   for (let i = 1; i <= 10; i++) {
     let colorbox = document.createElement("div");
     colorbox.setAttribute("class", "color" + i);
-    parent.appendChild(colorbox);
+    colorparent = parent.appendChild(colorbox);
+    let colordiv = document.createElement("div");
+    colordiv.setAttribute("class", "color");
+    colordivchange = colorparent.appendChild(colordiv);
+    colordivchange.style.backgroundColor = colors[i];
   }
 }
