@@ -105,13 +105,13 @@ function add2Div(parent, name, classname){
   var parent = document.querySelector("." + parent);
   var child = document.createElement("div");
   child.classList.add(name);
-  child.classList.add("\\31 " + classname);
+  child.classList.add(classname);
   parent.appendChild(child);
   console.log(parent + name);
 }
 
 function add3Div(parent, name){
-  var parent = document.querySelector(".\\31 " + parent);
+  var parent = document.querySelector("." + parent);
   var child = document.createElement("div");
   child.setAttribute("class", name);
   parent.appendChild(child);
@@ -170,6 +170,35 @@ async function seriFunc(item, index){
 }
 
 function addProduct(item, index){
+  for (let i = 0; i < item.length; i++) {
+    if (item.charAt(i) == 1){
+      item.charAt(i) = "a";
+    }
+    if (item.charAt(i) == 2){
+      item.charAt(i) = "b";
+    }
+    if (item.charAt(i) == 3){
+      item.charAt(i) = "c";
+    }
+    if (item.charAt(i) == 4){
+      item.charAt(i) = "d";
+    }
+    if (item.charAt(i) == 5){
+      item.charAt(i) = "e";
+    }
+    if (item.charAt(i) == 6){
+      item.charAt(i) = "f";
+    }
+    if (item.charAt(i) == 7){
+      item.charAt(i) = "g";
+    }
+    if (item.charAt(i) == 8){
+      item.charAt(i) = "h";
+    }
+    if (item.charAt(i) == 9{
+      item.charAt(i) = "i";
+    }
+  }
   add2Div("col" + prodcol, "product", item);
   add3Div(item, "prodimg");
   add3Div(item, "prodname");
