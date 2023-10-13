@@ -129,9 +129,9 @@
 
 .color {
   aspect-ratio: 1 / 1;
-  width: 100%;
-  border-radius: 50%;
-  border: 0.25vh solid black;
+  width: 80%;
+  border-radius: 45%;
+  border: 0.5vh solid black;
 }
 
 .prodimg { 
