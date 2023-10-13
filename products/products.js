@@ -240,7 +240,7 @@ function addBr(parent){
 }
 
 function addColorBox(parent){
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     let colorbox = document.createElement("div");
     colorbox.setAttribute("class", "color" + i);
     parent.appendChild(colorbox);
