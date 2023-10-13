@@ -101,10 +101,10 @@ function addDiv(parent, name){
 }
 
 function addprodcolums(){
-  addDiv("content" "products");
-  addDiv("products" "col1");
-  addDiv("products" "col2");
-  addDiv("products" "col3");
+  addDiv("content", "products");
+  addDiv("products", "col1");
+  addDiv("products", "col2");
+  addDiv("products", "col3");
   
 }
 
