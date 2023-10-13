@@ -109,7 +109,7 @@
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap: 0px 0px; 
+  gap: 3% 3%; 
   grid-template-areas: 
     "color1 color2 color3 color4 color5"
     "color6 color7 color8 color9 color10"; 
@@ -126,6 +126,12 @@
 .color8 { grid-area: color8; }
 .color9 { grid-area: color9; }
 .color10 { grid-area: color10; }
+
+.color {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 50%;
+}
 
 .prodimg { 
   grid-area: prodimg;
