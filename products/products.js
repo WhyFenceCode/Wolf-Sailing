@@ -177,16 +177,16 @@ function addProduct(item, index){
   let p2 = p1.appendChild(c1);
   let c2 = document.createElement("div");
   c2.setAttribute("class", "prodimg");
-  let p3 = p2.appendChild(c2);
+  p2.appendChild(c2);
   let c3 = document.createElement("div");
   c3.setAttribute("class", "prodname");
-  let p4 = p3.appendChild(c3);
+  p2.appendChild(c3);
   let c4 = document.createElement("div");
   c4.setAttribute("class", "prodcolors");
-  let p5 = p4.appendChild(c4);
+  p2.appendChild(c4);
   let c5 = document.createElement("div");
   c5.setAttribute("class", "prodbuy");
-  let p6 = p5.appendChild(c5);
+  p2.appendChild(c5);
 
   
   // item = numtoa(item);
