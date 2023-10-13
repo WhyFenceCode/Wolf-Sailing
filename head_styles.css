@@ -167,6 +167,7 @@
     grid-area: header;
     position: fixed;
     transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
   }
 
   .header:hover {
