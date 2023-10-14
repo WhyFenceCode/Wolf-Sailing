@@ -246,7 +246,7 @@ function addColorBox(parent, colors){
     let colorbox = document.createElement("div");
     colorbox.setAttribute("class", "color" + i);
     let colorparent = parent.appendChild(colorbox);
-    if (colors[i - 1] != "undefined"){
+    if (i-1 < colors.length){
       console.log(colors[i -1]);
       let colordiv = document.createElement("div");
       colordiv.setAttribute("class", "color");
