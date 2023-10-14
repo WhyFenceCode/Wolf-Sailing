@@ -98,7 +98,6 @@ function addDiv(parent, name){
   var child = document.createElement("div");
   child.setAttribute("class", name);
   parent.appendChild(child);
-  console.log(parent + name);
 }
 
 function add2Div(parent, name, classname){
@@ -248,6 +247,7 @@ function addColorBox(parent, colors){
     colorbox.setAttribute("class", "color" + i);
     let colorparent = parent.appendChild(colorbox);
     if (colors[i] != "undefined"){
+      console.log(colors[i]);
       let colordiv = document.createElement("div");
       colordiv.setAttribute("class", "color");
       let colordivchange = colorparent.appendChild(colordiv);
